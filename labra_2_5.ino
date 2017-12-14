@@ -18,6 +18,5 @@ void callback()
  
 void loop()
 {
-  // your program here...
 }
  
