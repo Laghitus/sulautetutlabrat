@@ -30,12 +30,10 @@ void setup(){
 ISR(TIMER0_COMPA_vect){
   analogValue1 = analogRead(A0);
   analogValue2 = analogRead(A1);
-  voltage = analogValue1 * (4500 / 1024.00);
-  voltage1 = analogValue2 * (4500 / 1024.00);
-  voltage2 = voltage*2;
-resistance = 10000 * voltage1 / (voltage2 - voltage1);
-resistance = round(resistance);
-Serial.println(resistance);
+  Serial.print("Arvo 1: ");
+  Serial.print(analogValue1);
+  Serial.print("  Arvo 2: ");
+  Serial.println(analogValue2);
 }
 
 
